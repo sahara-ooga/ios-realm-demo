@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FCB977C1EDCFFEE007E3282 /* realm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = realm.playground; sourceTree = "<group>"; };
 		40BEFE8AA6CB68A39D42DD3F /* Pods-ios-realm-demoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-realm-demoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-realm-demoTests/Pods-ios-realm-demoTests.release.xcconfig"; sourceTree = "<group>"; };
 		50B2BA7E6BDA67C5D8C44DA2 /* Pods_ios_realm_demoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_realm_demoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D04E847AFF710F64B6B001A /* Pods-ios-realm-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-realm-demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-realm-demo/Pods-ios-realm-demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +119,7 @@
 				BC0717701E57AC9300FED2F4 /* Models */,
 				BC0717711E57AC9D00FED2F4 /* Utils */,
 				BC0717461E5743C900FED2F4 /* AppDelegate.swift */,
+				1FCB977C1EDCFFEE007E3282 /* realm.playground */,
 				BC07174D1E5743C900FED2F4 /* Assets.xcassets */,
 				BC0717521E5743C900FED2F4 /* Info.plist */,
 				BC07174F1E5743C900FED2F4 /* LaunchScreen.storyboard */,
