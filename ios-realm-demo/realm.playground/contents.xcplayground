@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios'>
+<playground version='6.0' target-platform='ios' display-mode='raw'>
     <pages>
-        <page name='Untitled Page 2'/>
         <page name='tutorial'/>
+        <page name='To-One Relationships'/>
+        <page name='To-Many Relationships'/>
     </pages>
 </playground>
