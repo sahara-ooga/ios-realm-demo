@@ -4,5 +4,7 @@
         <page name='tutorial'/>
         <page name='To-One Relationships'/>
         <page name='To-Many Relationships'/>
+        <page name='Inverse Relationships'/>
+        <page name='Optional Properties'/>
     </pages>
 </playground>
