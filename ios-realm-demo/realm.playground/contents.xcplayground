@@ -7,5 +7,6 @@
         <page name='Inverse Relationships'/>
         <page name='Optional Properties'/>
         <page name='json'/>
+        <page name='sort'/>
     </pages>
 </playground>
