@@ -6,5 +6,6 @@
         <page name='To-Many Relationships'/>
         <page name='Inverse Relationships'/>
         <page name='Optional Properties'/>
+        <page name='json'/>
     </pages>
 </playground>
