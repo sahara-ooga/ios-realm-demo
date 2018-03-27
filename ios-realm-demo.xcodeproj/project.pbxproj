@@ -255,7 +255,7 @@
 				TargetAttributes = {
 					BC0717421E5743C900FED2F4 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = UE5DCQPTRB;
+						DevelopmentTeam = 469GT6P4NA;
 						ProvisioningStyle = Automatic;
 					};
 					BC0717561E5743C900FED2F4 = {
@@ -562,7 +562,7 @@
 			baseConfigurationReference = E6B63C2310A33131F3B0058A /* Pods-ios-realm-demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UE5DCQPTRB;
+				DEVELOPMENT_TEAM = 469GT6P4NA;
 				INFOPLIST_FILE = "ios-realm-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-realm-demo";
@@ -576,7 +576,7 @@
 			baseConfigurationReference = 8D04E847AFF710F64B6B001A /* Pods-ios-realm-demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UE5DCQPTRB;
+				DEVELOPMENT_TEAM = 469GT6P4NA;
 				INFOPLIST_FILE = "ios-realm-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-realm-demo";
