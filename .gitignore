@@ -75,3 +75,16 @@ iOSInjectionProject/
 
 # End of https://www.gitignore.io/api/objective-c
 
+Pods/Manifest.lock
+Pods/Manifest.lock
+Pods/Manifest.lock
+Pods/Pods.xcodeproj/project.pbxproj
+Pods/Target Support Files/Pods-ios-realm-demo/Pods-ios-realm-demo-frameworks.sh
+Pods/Target Support Files/Pods-ios-realm-demo/Pods-ios-realm-demo-resources.sh
+Pods/Target Support Files/Pods-ios-realm-demo/Pods-ios-realm-demo.debug.xcconfig
+Pods/Target Support Files/Pods-ios-realm-demo/Pods-ios-realm-demo.release.xcconfig
+Pods/Target Support Files/Pods-ios-realm-demoTests/Pods-ios-realm-demoTests-frameworks.sh
+Pods/Target Support Files/Pods-ios-realm-demoTests/Pods-ios-realm-demoTests.debug.xcconfig
+Pods/Target Support Files/Pods-ios-realm-demoTests/Pods-ios-realm-demoTests.release.xcconfig
+Pods/Target Support Files/Realm/Realm.xcconfig
+Pods/Target Support Files/RealmSwift/RealmSwift.xcconfig
