@@ -14,7 +14,6 @@
 		BC07174C1E5743C900FED2F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC07174A1E5743C900FED2F4 /* Main.storyboard */; };
 		BC07174E1E5743C900FED2F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC07174D1E5743C900FED2F4 /* Assets.xcassets */; };
 		BC0717511E5743C900FED2F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC07174F1E5743C900FED2F4 /* LaunchScreen.storyboard */; };
-		BC07175C1E5743C900FED2F4 /* ios_realm_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC07175B1E5743C900FED2F4 /* ios_realm_demoTests.swift */; };
 		BC0717671E57450300FED2F4 /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0717661E57450300FED2F4 /* ToDoModel.swift */; };
 		BC0717691E5745AC00FED2F4 /* ToDoModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0717681E5745AC00FED2F4 /* ToDoModelTests.swift */; };
 		BC07176B1E574A0C00FED2F4 /* ToDoDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC07176A1E574A0C00FED2F4 /* ToDoDao.swift */; };
@@ -48,7 +47,6 @@
 		BC0717501E5743C900FED2F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC0717521E5743C900FED2F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC0717571E5743C900FED2F4 /* ios-realm-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-realm-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC07175B1E5743C900FED2F4 /* ios_realm_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_realm_demoTests.swift; sourceTree = "<group>"; };
 		BC07175D1E5743C900FED2F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC0717661E57450300FED2F4 /* ToDoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoModel.swift; sourceTree = "<group>"; };
 		BC0717681E5745AC00FED2F4 /* ToDoModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoModelTests.swift; sourceTree = "<group>"; };
@@ -136,7 +134,6 @@
 				BC0717721E57ACAF00FED2F4 /* Models */,
 				BC0717731E57ACB900FED2F4 /* Utils */,
 				BC07175D1E5743C900FED2F4 /* Info.plist */,
-				BC07175B1E5743C900FED2F4 /* ios_realm_demoTests.swift */,
 			);
 			path = "ios-realm-demoTests";
 			sourceTree = "<group>";
@@ -422,7 +419,6 @@
 				BC0717771E57AD2200FED2F4 /* String+Date.swift in Sources */,
 				BC0717751E57ACD100FED2F4 /* Date+StringTests.swift in Sources */,
 				BC07176D1E574A7800FED2F4 /* ToDoDaoTests.swift in Sources */,
-				BC07175C1E5743C900FED2F4 /* ios_realm_demoTests.swift in Sources */,
 				BC0717691E5745AC00FED2F4 /* ToDoModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
