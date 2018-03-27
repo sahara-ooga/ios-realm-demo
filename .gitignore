@@ -88,3 +88,4 @@ Pods/Target Support Files/Pods-ios-realm-demoTests/Pods-ios-realm-demoTests.debu
 Pods/Target Support Files/Pods-ios-realm-demoTests/Pods-ios-realm-demoTests.release.xcconfig
 Pods/Target Support Files/Realm/Realm.xcconfig
 Pods/Target Support Files/RealmSwift/RealmSwift.xcconfig
+Pods/Manifest.lock
