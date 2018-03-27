@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		108BA4A0206A8EDD00FC6D30 /* snow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 108BA49F206A8EDD00FC6D30 /* snow.jpg */; };
+		108BA4A1206A8FF400FC6D30 /* snow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 108BA49F206A8EDD00FC6D30 /* snow.jpg */; };
 		6631DC0621B59131A55177D1 /* Pods_ios_realm_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3315CE6AE02A8771E25BA0 /* Pods_ios_realm_demo.framework */; };
 		A9F34C457BF08630D196C986 /* Pods_ios_realm_demoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B2BA7E6BDA67C5D8C44DA2 /* Pods_ios_realm_demoTests.framework */; };
 		BC0717471E5743C900FED2F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0717461E5743C900FED2F4 /* AppDelegate.swift */; };
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		108BA49F206A8EDD00FC6D30 /* snow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snow.jpg; sourceTree = "<group>"; };
 		1FCB977C1EDCFFEE007E3282 /* realm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = realm.playground; sourceTree = "<group>"; };
 		40BEFE8AA6CB68A39D42DD3F /* Pods-ios-realm-demoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-realm-demoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-realm-demoTests/Pods-ios-realm-demoTests.release.xcconfig"; sourceTree = "<group>"; };
 		50B2BA7E6BDA67C5D8C44DA2 /* Pods_ios_realm_demoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_realm_demoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +116,7 @@
 		BC0717451E5743C900FED2F4 /* ios-realm-demo */ = {
 			isa = PBXGroup;
 			children = (
+				108BA49F206A8EDD00FC6D30 /* snow.jpg */,
 				BCD9B0211E742CBE00FBCCB4 /* Helpers */,
 				BC0717701E57AC9300FED2F4 /* Models */,
 				BC0717711E57AC9D00FED2F4 /* Utils */,
@@ -291,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC0717511E5743C900FED2F4 /* LaunchScreen.storyboard in Resources */,
+				108BA4A0206A8EDD00FC6D30 /* snow.jpg in Resources */,
 				BC07174E1E5743C900FED2F4 /* Assets.xcassets in Resources */,
 				BC07174C1E5743C900FED2F4 /* Main.storyboard in Resources */,
 			);
@@ -300,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				108BA4A1206A8FF400FC6D30 /* snow.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

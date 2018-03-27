@@ -14,28 +14,27 @@ final class ToDoDao {
     static let dao = RealmDaoHelper<ToDoModel>()
     
     static func add(model: ToDoModel) {
-        
         let object = ToDoModel()
         object.taskID = ToDoDao.dao.newId()!
         object.title = model.title
         object.isDone = model.isDone
         object.limitDate = model.limitDate
+        object.image = model.image
         ToDoDao.dao.add(d: object)
     }
     
     static func update(model: ToDoModel) {
-        
         guard let object = dao.findFirst(key: model.taskID as AnyObject) else {
             return
         }
         object.title = model.title
         object.limitDate = model.limitDate
         object.isDone = model.isDone
+        object.image = model.image
         _ = dao.update(d: object)
     }
     
     static func delete(taskID: Int) {
-        
         guard let object = dao.findFirst(key: taskID as AnyObject) else {
             return
         }

@@ -12,6 +12,7 @@ import XCTest
 class ToDoDaoTests: XCTestCase {
     
     override func setUp() {
+        ToDoDao.deleteAll()
         super.setUp()
     }
     
@@ -28,12 +29,15 @@ class ToDoDaoTests: XCTestCase {
         object.title = "タイトル"
         object.isDone = true
         object.limitDate = "2016/01/01".str2Date(dateFormat: "yyyy/MM/dd")
-        
+        object.image = UIImage(named: "snow.jpg")
         //Exercise
         ToDoDao.add(model:object)
         
         //Verify
-        verifyItem(taskID: 1, title: "タイトル", isDone: true, limiteDateStr: "2016/01/01")
+        verifyItem(taskID: 1,
+                   title: "タイトル",
+                   isDone: true,
+                   limiteDateStr: "2016/01/01")
     }
     
     func testUpdateItem() {
@@ -44,25 +48,29 @@ class ToDoDaoTests: XCTestCase {
         object.title = "タイトル"
         object.isDone = true
         object.limitDate = "2016/01/01".str2Date(dateFormat: "yyyy/MM/dd")
-        
+        object.image = UIImage(named: "snow.jpg")
+
         //Exercise
         ToDoDao.add(model:object)
         object.title = "タイトル更新"
         object.isDone = false
         
         //Verify
-        verifyItem(taskID: 1, title: "タイトル更新", isDone: false, limiteDateStr: "2016/01/01")
+        verifyItem(taskID: 1,
+                   title: "タイトル更新",
+                   isDone: false,
+                   limiteDateStr: "2016/01/01")
     }
     
     func testDeleteItem() {
-        
         //Setup
         let object = ToDoModel()
         object.taskID = 1
         object.title = "タイトル"
         object.isDone = true
         object.limitDate = "2016/01/01".str2Date(dateFormat: "yyyy/MM/dd")
-        
+        object.image = UIImage(named: "snow.jpg")
+
         //Exercise
         ToDoDao.add(model:object)
         ToDoDao.delete(taskID: 1)
@@ -93,7 +101,8 @@ class ToDoDaoTests: XCTestCase {
         object.title = "タイトル"
         object.isDone = true
         object.limitDate = "2016/01/01".str2Date(dateFormat: "yyyy/MM/dd")
-        
+        object.image = UIImage(named: "snow.jpg")
+
         //Exercise
         ToDoDao.add(model:object)
         let result = ToDoDao.findByID(taskID: 1)
@@ -103,33 +112,34 @@ class ToDoDaoTests: XCTestCase {
     }
     
     //MARK:-private method
-    private func verifyItem(taskID: Int, title: String, isDone: Bool, limiteDateStr: String) {
+    private func verifyItem(taskID: Int, title: String,
+                            isDone: Bool, limiteDateStr: String) {
         
         let result = ToDoDao.findAll()
         
         XCTAssertEqual(result.first?.taskID, taskID)
         
-        if let title = result.first?.title {
-            XCTAssertEqual(title, title)
+        if let resultTitle = result.first?.title {
+            XCTAssertEqual(resultTitle, title)
         }
         
-        if let isDone = result.first?.isDone {
+        if let isDoneResult = result.first?.isDone {
             
             if isDone {
-                XCTAssertTrue(isDone)
+                XCTAssertTrue(isDoneResult)
             }
             else {
-                XCTAssertFalse(isDone)
+                XCTAssertFalse(isDoneResult)
             }
         }
         
         if let limiteDate = result.first?.limitDate?.date2Str(dateFormat: "yyyy/MM/dd") {
             XCTAssertEqual(limiteDate, limiteDateStr)
         }
+        
     }
     
     private func verifyCount(count: Int) {
-        
         let result = ToDoDao.findAll()
         XCTAssertEqual(result.count, count)
     }
