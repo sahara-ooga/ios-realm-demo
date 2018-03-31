@@ -264,7 +264,7 @@
 					};
 					BC0717561E5743C900FED2F4 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = UE5DCQPTRB;
+						DevelopmentTeam = 469GT6P4NA;
 						ProvisioningStyle = Automatic;
 						TestTargetID = BC0717421E5743C900FED2F4;
 					};
@@ -597,7 +597,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = UE5DCQPTRB;
+				DEVELOPMENT_TEAM = 469GT6P4NA;
 				INFOPLIST_FILE = "ios-realm-demoTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-realm-demoTests";
@@ -613,7 +613,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = UE5DCQPTRB;
+				DEVELOPMENT_TEAM = 469GT6P4NA;
 				INFOPLIST_FILE = "ios-realm-demoTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-realm-demoTests";
