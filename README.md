@@ -16,17 +16,39 @@ import RealmSwift
 ## 3. モデルの作成
 
 ```
-import Foundation
-import RealmSwift
-
 class ToDoModel: Object {
-    dynamic var taskID = 0
-    dynamic var title = ""
-    dynamic var limitDate: Date?
-    dynamic var isDone = false
+    @objc dynamic var taskID = 0
+    @objc dynamic var title = ""
+    @objc dynamic var limitDate: Date?
+    @objc dynamic var isDone = false
+    @objc dynamic private var _image: UIImage? = nil
+    @objc dynamic private var imageData: Data? = nil
+    @objc dynamic var image: UIImage?{
+        set{
+            //imageにsetすると、自動的に_imageに値が保持され、imageDataにも変換&setされる。
+            self._image = newValue
+            if let value = newValue {
+                self.imageData = UIImagePNGRepresentation(value)
+            }
+        }
+        get{
+            if let image = self._image {
+                return image
+            }
+            if let data = self.imageData {
+                self._image = UIImage(data: data)
+                return self._image
+            }
+            return nil
+        }
+    }
     
     override static func primaryKey() -> String? {
         return "taskID"
+    }
+    
+    override static func ignoredProperties() -> [String] {
+        return ["image", "_image"]
     }
 }
 ```
@@ -42,28 +64,27 @@ final class ToDoDao {
     static let dao = RealmDaoHelper<ToDoModel>()
     
     static func add(model: ToDoModel) {
-        
         let object = ToDoModel()
         object.taskID = ToDoDao.dao.newId()!
         object.title = model.title
         object.isDone = model.isDone
         object.limitDate = model.limitDate
+        object.image = model.image
         ToDoDao.dao.add(d: object)
     }
     
-    static func update(model: ToDoModel) {
-        
+    @discardableResult static func update(model: ToDoModel) -> Bool {
         guard let object = dao.findFirst(key: model.taskID as AnyObject) else {
-            return
+            return false
         }
         object.title = model.title
         object.limitDate = model.limitDate
         object.isDone = model.isDone
-        _ = dao.update(d: object)
+        object.image = model.image
+        return dao.update(d: object)
     }
     
     static func delete(taskID: Int) {
-        
         guard let object = dao.findFirst(key: taskID as AnyObject) else {
             return
         }
@@ -74,8 +95,8 @@ final class ToDoDao {
         dao.deleteAll()
     }
     
-    static func findByID(taskID: Int) -> ToDoModel? {
-        guard let object = dao.findFirst(key: taskID as AnyObject) else {
+    static func find(by taskID: Int) -> ToDoModel? {
+        guard let object = dao.findFirst(key:taskID as AnyObject) else {
             return nil
         }
         return object
@@ -84,6 +105,26 @@ final class ToDoDao {
     static func findAll() -> [ToDoModel] {
         let objects =  ToDoDao.dao.findAll()
         return objects.map { ToDoModel(value: $0) }
+    }
+}
+
+extension ToDoDao {
+    static func find(by predicate: NSPredicate) -> [ToDoModel] {
+        return ToDoDao.dao.find(by: predicate).map({ToDoModel(value: $0)})
+    }
+}
+
+extension ToDoDao {
+    
+    /// レコードの更新処理
+    ///
+    /// - Parameters:
+    ///   - model: 更新したいオブジェクト
+    ///   - transaction: 更新したいオブジェクトの更新処理　トランザクションのブロックで実行される
+    /// - Returns: 成功時true
+    @discardableResult static func update(model: ToDoModel,
+                                          transaction: @escaping () -> Void) -> Bool {
+        return dao.update(d: model, block: transaction)
     }
 }
 ```
@@ -109,7 +150,7 @@ final class RealmDaoHelper <T : RealmSwift.Object> {
             return nil
         }
         
-        if let last = realm.objects(T.self).last as? RealmSwift.Object,
+        if let last = realm.objects(T.self).last,// as? RealmSwift.Object,
             let lastId = last[key] as? Int {
             return lastId + 1
         } else {
@@ -145,8 +186,16 @@ final class RealmDaoHelper <T : RealmSwift.Object> {
         return findAll().last
     }
     
+    /// フィルタリングしたレコードを取得
+    ///
+    /// - Parameter predicate: フィルタリングの条件
+    /// - Returns: フィルタリングしたレコードの配列
+    func find(by predicate:NSPredicate) -> Results<T> {
+        return realm.objects(T.self).filter(predicate)
+    }
+    
     /**
-     * レコード追加を取得
+     * レコードを追加
      */
     func add(d :T) {
         do {

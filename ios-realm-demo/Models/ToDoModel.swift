@@ -15,6 +15,7 @@ class ToDoModel: Object {
     @objc dynamic var limitDate: Date?
     @objc dynamic var isDone = false
     @objc dynamic private var _image: UIImage? = nil
+    @objc dynamic private var imageData: Data? = nil
     @objc dynamic var image: UIImage?{
         set{
             //imageにsetすると、自動的に_imageに値が保持され、imageDataにも変換&setされる。
@@ -34,7 +35,6 @@ class ToDoModel: Object {
             return nil
         }
     }
-    @objc dynamic private var imageData: Data? = nil
     
     override static func primaryKey() -> String? {
         return "taskID"
