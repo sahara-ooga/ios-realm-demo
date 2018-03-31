@@ -57,3 +57,10 @@ final class ToDoDao {
         return objects.map { ToDoModel(value: $0) }
     }
 }
+
+extension ToDoDao {
+    static func find(by predicate: NSPredicate) -> [ToDoModel] {
+        return ToDoDao.dao.find(by: predicate).map({ToDoModel(value: $0)})
+    }
+}
+

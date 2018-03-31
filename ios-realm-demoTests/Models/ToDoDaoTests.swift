@@ -144,3 +144,44 @@ class ToDoDaoTests: XCTestCase {
         XCTAssertEqual(result.count, count)
     }
 }
+
+extension ToDoDaoTests {
+    func testFindAndFilter() {
+        threeModel.forEach(ToDoDao.add(model:))
+        
+        let predicates = [
+            NSPredicate(format: "title = %@", argumentArray: ["タイトル2"]),
+        ]
+        let compoundedPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: predicates)
+        let result = ToDoDao.find(by: compoundedPredicate)
+        
+        XCTAssertEqual(result.count, 2)
+        XCTAssertEqual(result.first?.isDone, true)
+    }
+    
+    var threeModel: [ToDoModel] {
+        
+        let object1 = ToDoModel()
+        object1.taskID = 1
+        object1.title = "タイトル"
+        object1.isDone = false
+        object1.limitDate = "2016/01/01".str2Date(dateFormat: "yyyy/MM/dd")
+        object1.image = UIImage(named: "snow.jpg")
+        
+        let object2 = ToDoModel()
+        object2.taskID = 2
+        object2.title = "タイトル2"
+        object2.isDone = true
+        object2.limitDate = "2016/01/02".str2Date(dateFormat: "yyyy/MM/dd")
+        object2.image = UIImage(named: "snow.jpg")
+        
+        let object3 = ToDoModel()
+        object3.taskID = 3
+        object3.title = "タイトル2"
+        object3.isDone = false
+        object3.limitDate = "2016/01/03".str2Date(dateFormat: "yyyy/MM/dd")
+        object3.image = UIImage(named: "snow.jpg")
+        
+        return [object1, object2, object3]
+    }
+}
