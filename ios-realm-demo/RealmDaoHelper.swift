@@ -24,7 +24,7 @@ final class RealmDaoHelper <T : RealmSwift.Object> {
             return nil
         }
         
-        if let last = realm.objects(T.self).last as? RealmSwift.Object,
+        if let last = realm.objects(T.self).last,// as? RealmSwift.Object,
             let lastId = last[key] as? Int {
             return lastId + 1
         } else {
@@ -60,8 +60,16 @@ final class RealmDaoHelper <T : RealmSwift.Object> {
         return findAll().last
     }
     
+    /// フィルタリングしたレコードを取得
+    ///
+    /// - Parameter predicate: フィルタリングの条件
+    /// - Returns: フィルタリングしたレコードの配列
+    func find(by predicate:NSPredicate) -> Results<T> {
+        return realm.objects(T.self).filter(predicate)
+    }
+    
     /**
-     * レコード追加を取得
+     * レコードを追加
      */
     func add(d :T) {
         do {
@@ -117,4 +125,3 @@ final class RealmDaoHelper <T : RealmSwift.Object> {
     }
     
 }
-

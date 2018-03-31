@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		108BA4A0206A8EDD00FC6D30 /* snow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 108BA49F206A8EDD00FC6D30 /* snow.jpg */; };
+		108BA4A1206A8FF400FC6D30 /* snow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 108BA49F206A8EDD00FC6D30 /* snow.jpg */; };
 		6631DC0621B59131A55177D1 /* Pods_ios_realm_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3315CE6AE02A8771E25BA0 /* Pods_ios_realm_demo.framework */; };
 		A9F34C457BF08630D196C986 /* Pods_ios_realm_demoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B2BA7E6BDA67C5D8C44DA2 /* Pods_ios_realm_demoTests.framework */; };
 		BC0717471E5743C900FED2F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0717461E5743C900FED2F4 /* AppDelegate.swift */; };
@@ -14,7 +16,6 @@
 		BC07174C1E5743C900FED2F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC07174A1E5743C900FED2F4 /* Main.storyboard */; };
 		BC07174E1E5743C900FED2F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC07174D1E5743C900FED2F4 /* Assets.xcassets */; };
 		BC0717511E5743C900FED2F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC07174F1E5743C900FED2F4 /* LaunchScreen.storyboard */; };
-		BC07175C1E5743C900FED2F4 /* ios_realm_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC07175B1E5743C900FED2F4 /* ios_realm_demoTests.swift */; };
 		BC0717671E57450300FED2F4 /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0717661E57450300FED2F4 /* ToDoModel.swift */; };
 		BC0717691E5745AC00FED2F4 /* ToDoModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0717681E5745AC00FED2F4 /* ToDoModelTests.swift */; };
 		BC07176B1E574A0C00FED2F4 /* ToDoDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC07176A1E574A0C00FED2F4 /* ToDoDao.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		108BA49F206A8EDD00FC6D30 /* snow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snow.jpg; sourceTree = "<group>"; };
 		1FCB977C1EDCFFEE007E3282 /* realm.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = realm.playground; sourceTree = "<group>"; };
 		40BEFE8AA6CB68A39D42DD3F /* Pods-ios-realm-demoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-realm-demoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-realm-demoTests/Pods-ios-realm-demoTests.release.xcconfig"; sourceTree = "<group>"; };
 		50B2BA7E6BDA67C5D8C44DA2 /* Pods_ios_realm_demoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_realm_demoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +50,6 @@
 		BC0717501E5743C900FED2F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC0717521E5743C900FED2F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC0717571E5743C900FED2F4 /* ios-realm-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-realm-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC07175B1E5743C900FED2F4 /* ios_realm_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_realm_demoTests.swift; sourceTree = "<group>"; };
 		BC07175D1E5743C900FED2F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC0717661E57450300FED2F4 /* ToDoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoModel.swift; sourceTree = "<group>"; };
 		BC0717681E5745AC00FED2F4 /* ToDoModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoModelTests.swift; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 		BC0717451E5743C900FED2F4 /* ios-realm-demo */ = {
 			isa = PBXGroup;
 			children = (
+				108BA49F206A8EDD00FC6D30 /* snow.jpg */,
 				BCD9B0211E742CBE00FBCCB4 /* Helpers */,
 				BC0717701E57AC9300FED2F4 /* Models */,
 				BC0717711E57AC9D00FED2F4 /* Utils */,
@@ -136,7 +138,6 @@
 				BC0717721E57ACAF00FED2F4 /* Models */,
 				BC0717731E57ACB900FED2F4 /* Utils */,
 				BC07175D1E5743C900FED2F4 /* Info.plist */,
-				BC07175B1E5743C900FED2F4 /* ios_realm_demoTests.swift */,
 			);
 			path = "ios-realm-demoTests";
 			sourceTree = "<group>";
@@ -253,17 +254,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Kushida　Eiji";
 				TargetAttributes = {
 					BC0717421E5743C900FED2F4 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = UE5DCQPTRB;
+						DevelopmentTeam = 469GT6P4NA;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					BC0717561E5743C900FED2F4 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = UE5DCQPTRB;
+						DevelopmentTeam = 469GT6P4NA;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = BC0717421E5743C900FED2F4;
 					};
@@ -294,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC0717511E5743C900FED2F4 /* LaunchScreen.storyboard in Resources */,
+				108BA4A0206A8EDD00FC6D30 /* snow.jpg in Resources */,
 				BC07174E1E5743C900FED2F4 /* Assets.xcassets in Resources */,
 				BC07174C1E5743C900FED2F4 /* Main.storyboard in Resources */,
 			);
@@ -303,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				108BA4A1206A8FF400FC6D30 /* snow.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,13 +335,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-realm-demo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		1EFF53A78C27F8347158872C /* [CP] Copy Pods Resources */ = {
@@ -360,13 +368,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-realm-demoTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		875EDDD67636A730B469348C /* [CP] Embed Pods Frameworks */ = {
@@ -390,9 +401,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ios-realm-demo/Pods-ios-realm-demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -422,7 +438,6 @@
 				BC0717771E57AD2200FED2F4 /* String+Date.swift in Sources */,
 				BC0717751E57ACD100FED2F4 /* Date+StringTests.swift in Sources */,
 				BC07176D1E574A7800FED2F4 /* ToDoDaoTests.swift in Sources */,
-				BC07175C1E5743C900FED2F4 /* ios_realm_demoTests.swift in Sources */,
 				BC0717691E5745AC00FED2F4 /* ToDoModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,7 +483,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -476,7 +493,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -517,7 +538,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -525,7 +548,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -555,12 +582,13 @@
 			baseConfigurationReference = E6B63C2310A33131F3B0058A /* Pods-ios-realm-demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UE5DCQPTRB;
+				DEVELOPMENT_TEAM = 469GT6P4NA;
 				INFOPLIST_FILE = "ios-realm-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-realm-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -569,12 +597,13 @@
 			baseConfigurationReference = 8D04E847AFF710F64B6B001A /* Pods-ios-realm-demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = UE5DCQPTRB;
+				DEVELOPMENT_TEAM = 469GT6P4NA;
 				INFOPLIST_FILE = "ios-realm-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-realm-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -584,12 +613,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = UE5DCQPTRB;
+				DEVELOPMENT_TEAM = 469GT6P4NA;
 				INFOPLIST_FILE = "ios-realm-demoTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-realm-demoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-realm-demo.app/ios-realm-demo";
 			};
 			name = Debug;
@@ -600,12 +630,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = UE5DCQPTRB;
+				DEVELOPMENT_TEAM = 469GT6P4NA;
 				INFOPLIST_FILE = "ios-realm-demoTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-realm-demoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ios-realm-demo.app/ios-realm-demo";
 			};
 			name = Release;
