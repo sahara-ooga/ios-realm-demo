@@ -10,12 +10,12 @@ import Foundation
 import RealmSwift
 
 class ToDoModel: Object {
-    dynamic var taskID = 0
-    dynamic var title = ""
-    dynamic var limitDate: Date?
-    dynamic var isDone = false
-    dynamic private var _image: UIImage? = nil
-    dynamic var image: UIImage?{
+    @objc dynamic var taskID = 0
+    @objc dynamic var title = ""
+    @objc dynamic var limitDate: Date?
+    @objc dynamic var isDone = false
+    @objc dynamic private var _image: UIImage? = nil
+    @objc dynamic var image: UIImage?{
         set{
             //imageにsetすると、自動的に_imageに値が保持され、imageDataにも変換&setされる。
             self._image = newValue
@@ -34,7 +34,7 @@ class ToDoModel: Object {
             return nil
         }
     }
-    dynamic private var imageData: Data? = nil
+    @objc dynamic private var imageData: Data? = nil
     
     override static func primaryKey() -> String? {
         return "taskID"

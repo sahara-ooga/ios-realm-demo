@@ -208,6 +208,14 @@ final class RealmDaoHelper <T : RealmSwift.Object> {
 
 もし消してもいいのであれば、`po Realm.Configuration.defaultConfiguration.fileURL`でRealmのDBの本体を特定して消去することで整合性の問題は解消される。
 
+## 開発環境
+| Category | Version |
+|:-----------:|:------------:|
+| Swift | 4 |
+| Xcode | 9.2 |
+| iOS | 10.0~ |
+
+
 ## Reference
 
 [Realm × Swift2 でシームレスに画像を保存する - Qiita](https://qiita.com/_ha1f/items/593ca4f9c97ae697fc75)
