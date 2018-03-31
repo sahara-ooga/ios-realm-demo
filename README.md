@@ -211,3 +211,9 @@ final class RealmDaoHelper <T : RealmSwift.Object> {
 ## Reference
 
 [Realm × Swift2 でシームレスに画像を保存する - Qiita](https://qiita.com/_ha1f/items/593ca4f9c97ae697fc75)
+
+[Realm swift get started](https://realm.io/docs/swift/latest#getting-started)
+
+[SwiftでRealmを使う時のTips(3) NSPredicate編 - Qiita](https://qiita.com/nakau1/items/40865299dacc50d71604)
+
+[NSPredicate Cheatsheet](https://academy.realm.io/posts/nspredicate-cheatsheet/)
