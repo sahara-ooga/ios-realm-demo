@@ -52,14 +52,24 @@ class ToDoDaoTests: XCTestCase {
 
         //Exercise
         ToDoDao.add(model:object)
-        object.title = "タイトル更新"
-        object.isDone = false
+        guard let loaded = ToDoDao.find(by: 1) else {
+            XCTFail("Fail to load")
+            return
+        }
+
+        ToDoDao.update(model: loaded){
+            //Dao.addメソッドで取得したオブジェクトは、
+            //writeの引数のクロージャ内で更新しないとエラーが発生した
+            loaded.title = "タイトル更新"
+            loaded.isDone = false
+            loaded.limitDate = "2017/01/01".str2Date(dateFormat: "yyyy/MM/dd")
+        }
         
         //Verify
         verifyItem(taskID: 1,
                    title: "タイトル更新",
                    isDone: false,
-                   limiteDateStr: "2016/01/01")
+                   limiteDateStr: "2017/01/01")
     }
     
     func testDeleteItem() {
@@ -105,7 +115,7 @@ class ToDoDaoTests: XCTestCase {
 
         //Exercise
         ToDoDao.add(model:object)
-        let result = ToDoDao.findByID(taskID: 1)
+        let result = ToDoDao.find(by: 1)
         
         //Verify
         XCTAssertEqual(result?.taskID, 1)

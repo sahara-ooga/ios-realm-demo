@@ -24,7 +24,7 @@ final class RealmDaoHelper <T : RealmSwift.Object> {
             return nil
         }
         
-        if let last = realm.objects(T.self).last as? RealmSwift.Object,
+        if let last = realm.objects(T.self).last,// as? RealmSwift.Object,
             let lastId = last[key] as? Int {
             return lastId + 1
         } else {
@@ -69,7 +69,7 @@ final class RealmDaoHelper <T : RealmSwift.Object> {
     }
     
     /**
-     * レコード追加を取得
+     * レコードを追加
      */
     func add(d :T) {
         do {
@@ -125,4 +125,3 @@ final class RealmDaoHelper <T : RealmSwift.Object> {
     }
     
 }
-
